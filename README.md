@@ -24,6 +24,9 @@ It has a navbar on the top of the page for website navigation, and a TOC (table 
   If you want to add TOC, then the command will look like
   ```sh
   pandoc input.md --template toc-sidebar.html --toc -B nav -o outWithTOC.html
+  
+  # output self-contained html, the images are encoded as base64
+  pandoc input.md --self-contained --template toc-sidebar.html --toc -B nav -o outWithTOC.html
   ```
   
 ### Options
